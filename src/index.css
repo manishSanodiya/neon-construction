@@ -1,13 +1,195 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:  sans-serif ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+    background-color: #fff !important;
 }
+
+.navbar-brand{
+font-size: 1.9rem !important;
+color: #565387 !important;
+
+}
+
+.navbar a{
+    font-size: 1.3rem !important;
+    text-transform: capitalize;
+}
+
+.menu_active{
+    font-weight: bold !important;
+    border-bottom: 1px solid #565387;
+}
+
+.navbar a:active{
+    font-weight: bold !important;
+    border-bottom: 1px solid #ff5722;
+}
+
+.navbar a:hover{
+    color: #ff5722 !important;
+}
+
+@media (max-width:989px) {
+    .navbar-brand{
+        font-size: 1.5rem !important;
+
+    }
+
+    .menu_active{
+        font-weight: bold !important;
+        border-bottom: none;
+    }
+}
+
+/* _______________________________________________Home and About_______________________________________________________ */
+
+
+#header{
+    width: 100%;
+    height: 80vh;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+#header h1{
+    margin:0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+}
+#header h2{
+ 
+    font-size: 26px;
+
+    color: #484848;
+}
+
+#header .brand-name{
+    color: #ff5722;
+}
+
+#header .btn-get-started{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #ff5722;
+    border: 2px solid #ff5722;
+    text-decoration: none;
+}
+
+#header .btn-get-started:hover{
+    background-color: #ff5722;
+    color: white;
+}
+
+#header-img{
+    text-align: right;
+}
+
+/* __________________________________________________________________________++  footer_________________====*/
+.link{
+    text-decoration: none !important;
+    color: black;
+
+}
+
+.footer{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: aliceblue;
+    width: 80%;
+  
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+   .footer{
+    display:flex;
+    flex-direction: column;
+   }
+  }
+
+  /* ______________________________card_____________________________________ */
+
+  .btn-details{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #ff5722;
+    border: 2px solid #ff5722;
+    text-decoration: none;
+  }
+
+  .btn-details:hover{
+    background-color: #ff5722;
+    color: white;
+}
+
+/* ______________________________ clients _______________________________________ */
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
