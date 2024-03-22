@@ -1,0 +1,122 @@
+
+.main_container{
+    width:100%;
+    color: white;
+    margin-top: 1rem;
+}
+   
+
+
+.overall_main{
+    display: flex;
+   align-items: center;
+    height: auto;
+}
+
+.overall_progressbar{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1.5rem;
+    margin-left: 1.25rem;
+}
+
+.overall_heading{
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    
+  
+    color:#d8ab4e;
+    
+
+}
+
+.suggestion{
+    border:.5px solid whitesmoke;
+    padding:.5rem;
+}
+
+
+
+
+
+.property_1{
+    padding: 2rem;
+    border:1px solid black;
+    margin: .25rem;
+}
+
+.property_1 { grid-area: header; }
+.property_2 { grid-area: menu; }
+.property_3 { grid-area: main; }
+.property_4 { grid-area: right; }
+.property_5{ grid-area: footer; }
+
+
+.property_2{
+    padding: 2rem;
+    border:1px solid black;
+    margin: .25rem;
+}
+.property_3{
+    padding: 2rem;
+    border:1px solid black;
+    margin: .25rem;
+}
+.property_4{
+    padding: 2rem;
+    border:1px solid black;
+    margin: .25rem;
+}
+.property_5{
+    padding: 2rem;
+    border:1px solid white;
+    margin: .25rem;
+}
+
+.property_container{
+    display: grid;
+    grid-template-areas:
+    'header menu main right'
+    'footer footer footer footer';
+    /* grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer'; */
+    background-color: rgb(19, 1, 22);
+    padding: 10px;
+}
+
+.property_container button:hover{
+  background-color: rgb(50, 3, 58) ;
+  color: white;
+}
+.property_container button:focus{
+  background-color: rgb(19, 1, 22) ;
+  color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .property_container{
+    display: grid;
+    grid-template-areas:
+    'header menu'
+    ' main right'
+    'footer footer';
+    /* grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer'; */
+    background-color: rgb(19, 1, 22);
+    padding: 10px;
+}
+
+.overall_main{
+    flex-direction: column;
+
+}
+.overall_heading{
+    margin-left: 0;
+}
+}

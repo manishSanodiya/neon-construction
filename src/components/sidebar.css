@@ -1,0 +1,14 @@
+
+
+
+.sidebar-main{
+    top: 0;
+    display: flex;
+    height: 100vh;
+    overflow:initial;
+    position:-webkit-sticky;
+    position: sticky;
+    
+}
+
+

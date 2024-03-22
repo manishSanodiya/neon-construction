@@ -1,10 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Montserrat:wght@400;500&family=Mulish&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family:  sans-serif ;
+font-family:anta,sans-serif;
+
 }
+
+
 
 .navbar{
     background-color: #fff !important;
@@ -12,7 +18,7 @@ font-family:  sans-serif ;
 
 .navbar-brand{
 font-size: 1.9rem !important;
-color: #565387 !important;
+color: #e2e2c1 !important;
 
 }
 
@@ -28,11 +34,11 @@ color: #565387 !important;
 
 .navbar a:active{
     font-weight: bold !important;
-    border-bottom: 1px solid #ff5722;
+    border-bottom: 1px solid #7555be;
 }
 
 .navbar a:hover{
-    color: #ff5722 !important;
+    color:  #55beac !important;
 }
 
 @media (max-width:989px) {
@@ -57,13 +63,13 @@ color: #565387 !important;
     margin-bottom: 10px;
 }
 
-#header h1{
+ h1{
     margin:0 0 10px 0;
-    font-size: 48px;
+    font-size: 58px;
     font-weight: 700;
     color: black;
 }
-#header h2{
+ h2{
  
     font-size: 26px;
 
@@ -110,7 +116,6 @@ color: #565387 !important;
     padding: 1rem;
     background-color: aliceblue;
     width: 80%;
-  
     margin-top: 10px;
 }
 
@@ -193,3 +198,8 @@ color: #565387 !important;
     height: 50px;
     margin: 0 40px;
   }
+
+  /* ----------------------------- */
+  .navbar {
+    background-image: linear-gradient(90deg, rgb(19, 1, 22) 0%, rgb(66, 6, 90) 35%, rgb(119, 11, 122) 100%) !important;
+}
